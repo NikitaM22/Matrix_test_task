@@ -1,0 +1,26 @@
+{
+  "name": "matrix-message-e2e-assignment",
+  "version": "1.0.0",
+  "description": "Playwright assignment for Matrix-style web messenger message sending",
+  "scripts": {
+    "test": "playwright test",
+    "auth:setup": "node scripts/save-auth-state.js",
+    "test:e2e": "playwright test",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:debug": "playwright test --debug",
+    "test:list": "playwright test --list"
+  },
+  "keywords": [
+    "playwright",
+    "e2e",
+    "matrix",
+    "testing"
+  ],
+  "author": "Nikita Minenko",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "dotenv": "^17.4.2"
+  }
+}
